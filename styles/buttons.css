@@ -1,0 +1,56 @@
+/*  ~ * ~  Submit button  ~ * ~  */
+
+input,
+button {
+      border: none;
+      border-radius: 15px;
+}
+
+input[type="submit"],
+button,
+.return-btn {
+      background-color: rgba(255, 164, 29, 0.822);
+      color: rgb(17, 18, 26);
+      margin: 25px 0;
+      cursor: pointer;
+      transition: background-color 0.3s ease-out;
+      padding: 9px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+      background-color: rgba(207, 111, 33, 0.822);
+      color: rgb(17, 18, 26);
+      box-shadow: 0 0 8px 4px rgba(255, 235, 59, 0.25) inset, 0 0 8px 4px rgba(255, 235, 59, 0.25);
+}
+
+#card-menu>button {
+      width: 25%;
+      background-color: rgb(216 139 239 / 80%);
+
+      
+}
+
+#card-menu>button:hover {
+      transition: background-color 0.3s ease-out;
+      box-shadow: 0 0 8px 4px rgba(216 139 239 / 80%) inset, 0 0 8px 4px rgba(216 139 239 / 80%);
+}
+
+.return-btn {
+      width: 20%;
+      margin: 0;
+}
+
+.no-deco-link {
+      color: rgb(22, 22, 26);
+      text-decoration: none;
+}
+
+#back-to-forum-btn {
+      margin-left: 2%;
+}
+
+.reply-btn {
+      margin-right: 0 !important;
+      width: 14%;
+}

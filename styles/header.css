@@ -1,0 +1,115 @@
+/*  ~ * ~  Header section  ~ * ~  */
+
+#logo {
+      width: 150px;
+}
+
+.header {
+      grid-area: header;
+      color: #F4F3EE;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-right: 12%;
+}
+
+.header>#menu {
+      color: #F4F3EE;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+      width: 70%;
+}
+
+#menu>form {    
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+}
+
+#search-field {
+      width: 78%;
+}
+
+#search-icon {
+      width: 23px;
+      padding: 6px;
+      border-radius: 5px;
+      margin-left: 5px;
+      cursor: pointer;
+      background-color: rgba(255, 255, 246, 0.47);
+} 
+
+/* When window is more than 800 px wide */
+@media screen and (min-width: 800px) {
+      #hamburger-menu {
+            display: none;
+      }
+}
+
+.header>#menu>p {
+      border-bottom: 2px solid rgba(255, 164, 29, 0.822);
+      padding-bottom: 6px;
+}
+
+.header>#menu>a {
+      color: #f4f3ee75;
+      text-decoration: none;
+}
+
+/* When window is less than 800 px wide */
+@media screen and (max-width: 800px) {
+      .header>#menu {
+            display: none;
+      }
+}
+
+#hamburger-menu {
+      position: fixed;
+      margin: 3% 9% 0% 85%;
+}
+
+#hamburger-menu.active {
+      margin: 3% 9% 0% 35%;
+      transition: none;
+}
+
+#hamburger-menu>img {
+      width: 30px;
+      cursor: pointer;
+}
+
+.active {
+      width: 50%;
+      background-color: rgb(236, 186, 109);
+      text-align: right;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      padding: 0 0% 10% 5%;
+      margin: 3% 9% 0% 7%;
+}
+
+.menu-option {
+      display: none;
+      padding: 3%;
+      border-bottom: 1px solid #F4F3EE;
+
+      a {
+            text-decoration: none;
+            color: rgb(6, 2, 14);
+      }
+
+      p {
+            padding: 0;
+            margin: 2px;
+            color: rgba(255, 219, 196, 0.753);
+      }
+}
+
+.menu-option.show {
+      display: block;
+      text-align: center;
+      transition: 0.3s ease-in-out;
+}
